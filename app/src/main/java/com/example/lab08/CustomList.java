@@ -13,12 +13,19 @@ public class CustomList {
     public void addCity(City city) {
         cities.add(city);
     }
+
     public boolean hasCity(City city) {
         return cities.contains(city);
     }
 
-    // this is the first test, CI trigger
+    public void deleteCity(City city) {
+        if (!cities.contains(city)) {
+            throw new IllegalArgumentException();
+        }
+        cities.remove(city);
+    }
 
-    // Will be implemented later using TDD (leave blank for now)
-    // public boolean hasCity(City city) { ... }
+    public int countCities() {
+        return cities.size();
+    }
 }
