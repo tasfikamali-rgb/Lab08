@@ -14,7 +14,7 @@ public class CustomList {
         cities.add(city);
     }
 
-    
+    // this is the first test, CI trigger
 
     // Will be implemented later using TDD (leave blank for now)
     // public boolean hasCity(City city) { ... }
